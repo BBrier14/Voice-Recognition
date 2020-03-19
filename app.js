@@ -9,7 +9,9 @@ recognition.onstart = function() {
 };
 
 recognition.onresult = function(event) {
-	console.log(event);
+	const current = event.resultIndex;
+	const transcript = event.results[current][0].transcript;
+	content.textContent = transcript;
 };
 
 //Add the Listener to button
