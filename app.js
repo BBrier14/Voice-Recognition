@@ -2,7 +2,7 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
 //
-const greetings = [ 'Im good', 'Doing good homeboy', 'leave me alone' ];
+const greetings = [ 'Im good', 'Im doing good man', 'leave me alone' ];
 const weather = [ 'weather is fine', 'you need a tan' ];
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
