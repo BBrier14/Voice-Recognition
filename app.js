@@ -47,6 +47,11 @@ function readOutLoud(message) {
 		speech.text = finalText;
 	}
 
+	if (message.includes('weather')) {
+		const finalText = weather[Math.floor(Math.random() * weather.length)];
+		speech.text = finalText;
+	}
+
 	speech.volume = 1;
 	speech.rate = 1;
 	speech.pitch = 1;
