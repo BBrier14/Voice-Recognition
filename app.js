@@ -14,7 +14,13 @@ const greetings = [
 	'Living a dream'
 ];
 
-const weather = [ 'weather is fine', 'you need a tan' ];
+const weather = [
+	'weather is fine',
+	'you need a tan',
+	'Its nice out!',
+	"It's hot, humid, and totally miserable",
+	'Sunny, some clouds, relatively cool.'
+];
 
 //----- Opening and listening -----//
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
