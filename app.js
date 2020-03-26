@@ -48,13 +48,21 @@ function readOutLoud(message) {
 
 	speech.text = 'I dont know what you said';
 
+	// How are you questions
 	if (message.includes('how are you')) {
 		const finalText = greetings[Math.floor(Math.random() * greetings.length)];
 		speech.text = finalText;
 	}
 
+	// Weather related questions
 	if (message.includes('weather')) {
 		const finalText = weather[Math.floor(Math.random() * weather.length)];
+		speech.text = finalText;
+	}
+
+	// What is your name
+	if (message.includes('name')) {
+		const finalText = name;
 		speech.text = finalText;
 	}
 
